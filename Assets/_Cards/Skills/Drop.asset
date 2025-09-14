@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 216869dda44c5ca4fbdbdc8b4f8b7770, type: 3}
+  m_Name: Drop
+  m_EditorClassIdentifier: 
+  cardName: Drop
+  cardType: 3
+  portrait: {fileID: 21300000, guid: 97abacdc005f3844a94d0b4886a249ed, type: 2}
+  symbol: "\u2728"
+  energyDescription: 
+  freelancerHP: 0
+  weaponName: 
+  weaponCost: 
+  weaponDamage: 0
+  weaponInfo: 
+  abilityName: 
+  abilityCost: 
+  abilityInfo: 
+  ultimateName: 
+  ultimateCost: 
+  ultimateInfo: 
+  footer: 
+  supportInfo: You can transfer as many equipped energies as you have to an ally.
+  conditions:
+  - type: 9
+    value: 1
+    requiredState: 1
+    isPassiveCondition: 0
+    passiveIcon: 
+  modifiers:
+  - priority: 0
+    logic: 0
+    type: 13
+    value: 0
+    consumedBy: 0
+    minRoll: 0
+    maxRoll: 0
+    newResult: 0
+    effectToApply: {fileID: 0}
+    target: 0
+    triggerOn: 0
+  duration: 1
+  canStack: 0
+  customStatusIcon: 
+  complexEffects: []
+  references:
+    version: 2
+    RefIds: []

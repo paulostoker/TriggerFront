@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 216869dda44c5ca4fbdbdc8b4f8b7770, type: 3}
+  m_Name: Retaliate
+  m_EditorClassIdentifier: 
+  cardName: Retaliate
+  cardType: 3
+  portrait: {fileID: 21300000, guid: f98e21ffbc8b4634eaf5eb3a6043df59, type: 2}
+  symbol: "\u2728"
+  energyDescription: 
+  freelancerHP: 0
+  weaponName: 
+  weaponCost: 
+  weaponDamage: 0
+  weaponInfo: 
+  abilityName: 
+  abilityCost: 
+  abilityInfo: 
+  ultimateName: 
+  ultimateCost: 
+  ultimateInfo: 
+  footer: 
+  supportInfo: If you are targeted by an attack, you may counter-attack using your
+    equiped weapon immediately. This card can not stack.
+  conditions: []
+  modifiers:
+  - priority: 0
+    logic: 0
+    type: 14
+    value: 1
+    consumedBy: 2
+    minRoll: 0
+    maxRoll: 0
+    newResult: 0
+    effectToApply: {fileID: 0}
+    target: 0
+    triggerOn: 0
+  duration: 99
+  canStack: 0
+  customStatusIcon: "\u21A9\uFE0F"
+  complexEffects: []
+  references:
+    version: 2
+    RefIds: []

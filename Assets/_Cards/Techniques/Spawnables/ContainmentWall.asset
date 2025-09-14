@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1134bd3d7f86ebc478495eb4855ce71c, type: 3}
+  m_Name: ContainmentWall
+  m_EditorClassIdentifier: 
+  effectPrefab: {fileID: 1643939145769744183, guid: 15eab958a3f39c24fb254cc29cc89ec1, type: 3}
+  durationTurns: 8
+  blocksMovement: 1
+  blocksLineOfSight: 0
+  isDestructible: 1
+  maxHP: 400

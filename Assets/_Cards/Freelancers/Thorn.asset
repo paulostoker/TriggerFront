@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9e9707c7bc32b24da7537c1065db60a, type: 3}
+  m_Name: Thorn
+  m_EditorClassIdentifier: 
+  name: Thorn
+  HP: 190
+  opClass: Bastion
+  qualification: Specialist
+  baseMovement: 4
+  piecePrefab: {fileID: 3093519877135624757, guid: 39e21c4cdcde8de4ca623438abee09f3, type: 3}
+  portrait: {fileID: 9100000, guid: 347231f839f2c5947b3e9d216de0d90e, type: 2}
+  weaponName: Ravager
+  weaponCost:
+    action: 2
+    utility: 0
+    aura: 0
+  weaponType: 0
+  weaponStats:
+    damage: 100
+    range: 6
+    criticalDamage: 30
+    proximityBonus: 20
+  weaponInfo: "Assault Rifle \U0001F4A5100 \U0001F4A06 \u26A0\uFE0F30 \U0001F4A220"
+  techniques:
+  - {fileID: 11400000, guid: 4cac078977f9c1c4e96ff534a7900737, type: 2}
+  ultimate: {fileID: 0}
+  footerInfo: "\U0001F6E1\uFE0F Bastion / \U0001F4BB Specialist"

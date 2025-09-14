@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9e9707c7bc32b24da7537c1065db60a, type: 3}
+  m_Name: Karma
+  m_EditorClassIdentifier: 
+  name: Karma
+  HP: 160
+  opClass: Sentinel
+  qualification: gunner
+  baseMovement: 4
+  piecePrefab: {fileID: 3093519877135624757, guid: 39e21c4cdcde8de4ca623438abee09f3, type: 3}
+  portrait: {fileID: 9100000, guid: 6becd05c1e708f243a975b86f807866e, type: 2}
+  weaponName: Havoc
+  weaponCost:
+    action: 2
+    utility: 0
+    aura: 0
+  weaponType: 0
+  weaponStats:
+    damage: 100
+    range: 6
+    criticalDamage: 30
+    proximityBonus: 20
+  weaponInfo: "Assault Rifle \U0001F4A5100 \U0001F4A06 \u26A0\uFE0F30 \U0001F4A220"
+  abilityName: Toll
+  abilityCost:
+    action: 3
+    utility: 1
+    aura: 0
+  abilityType: Target
+  abilityStats: 
+  abilityInfo: "Marks 1 \U0001F3AF up to \U0001F4A06. If an enemy crosses, fire Havoc.
+    Remove when moving."
+  ultimateName: Fair Charge
+  ultimateCost:
+    action: 3
+    utility: 0
+    aura: 3
+  ultimateType: 
+  ultimateStats: 
+  ultimateInfo: Instantly returns the same damage received from shots
+  footerInfo: "\U0001F3F0 Sentinel / \U0001F52B Gunner"

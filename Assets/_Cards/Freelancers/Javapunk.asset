@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9e9707c7bc32b24da7537c1065db60a, type: 3}
+  m_Name: Javapunk
+  m_EditorClassIdentifier: 
+  name: Javapunk
+  HP: 200
+  opClass: Bastion
+  qualification: Demolisher
+  baseMovement: 4
+  piecePrefab: {fileID: 3093519877135624757, guid: 39e21c4cdcde8de4ca623438abee09f3, type: 3}
+  portrait: {fileID: 9100000, guid: d4a35af70207b144e9349b2293e543ea, type: 2}
+  weaponName: Juggernaut
+  weaponCost:
+    action: 3
+    utility: 0
+    aura: 0
+  weaponType: 5
+  weaponStats:
+    damage: 120
+    range: 5
+    criticalDamage: 20
+    proximityBonus: 20
+  weaponInfo: "Light Machine Gun \U0001F4A5120 \U0001F4A05 \u26A0\uFE0F20 \U0001F4A220"
+  abilityName: Explosive Shield
+  abilityCost:
+    action: 0
+    utility: 1
+    aura: 0
+  abilityType: Counter
+  abilityStats: 
+  abilityInfo: "If attacked with a point-blank shot, retaliates with \U0001F4A5100"
+  ultimateName: Seismic Sacrifice
+  ultimateCost:
+    action: 0
+    utility: 0
+    aura: 3
+  ultimateType: 
+  ultimateStats: 
+  ultimateInfo: "Sacrifices \u2764\uFE0F200 causing a \U0001F4A5200 explosion and
+    creating holes in surrounding obstacles."
+  footerInfo: "\U0001F6E1\uFE0F Bastion / \U0001F9E8 Demolisher"

@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81641b1fc81b34c4ca61ada25f7cd319, type: 3}
+  m_Name: DeckAction
+  m_EditorClassIdentifier: 
+  actionCardData: {fileID: 11400000, guid: 249701f479967324cad1af6823761e5f, type: 2}
+  actionCardQuantity: 15
+  utilityCardData: {fileID: 0}
+  utilityCardQuantity: 0
+  auraCardData: {fileID: 0}
+  auraCardQuantity: 0
+  skillCards:
+  - card: {fileID: 11400000, guid: 89eb5764a6efe684e9215e2ae945f529, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: 4af9d228fee0c1f49b61169813d55410, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: 488167619a8d9e243ac65dc4994217c7, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: 2d1d0b7d05585c54f896caf85ee68f49, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: 34d71fc86c6d9fe438e57eabf44667e3, type: 2}
+    quantity: 1
+  strategyCards:
+  - card: {fileID: 11400000, guid: d55914c67bc3f2241a2c47f2b93621bc, type: 2}
+    quantity: 2
+  - card: {fileID: 11400000, guid: 38f628a2b4bbf4543a436198b4749149, type: 2}
+    quantity: 2
+  - card: {fileID: 11400000, guid: 38f628a2b4bbf4543a436198b4749149, type: 2}
+    quantity: 2
+  - card: {fileID: 0}
+    quantity: 2
+  - card: {fileID: 0}
+    quantity: 2

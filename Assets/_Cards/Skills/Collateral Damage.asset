@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 216869dda44c5ca4fbdbdc8b4f8b7770, type: 3}
+  m_Name: Collateral Damage
+  m_EditorClassIdentifier: 
+  cardName: Collateral Damage
+  cardType: 3
+  portrait: {fileID: 21300000, guid: c612a22e5dc52bc4f8b8cb8a38fc599d, type: 2}
+  symbol: "\u2728"
+  energyDescription: 
+  freelancerHP: 0
+  weaponName: 
+  weaponCost: 
+  weaponDamage: 0
+  weaponInfo: 
+  abilityName: 
+  abilityCost: 
+  abilityInfo: 
+  ultimateName: 
+  ultimateCost: 
+  ultimateInfo: 
+  footer: 
+  supportInfo: "Your next attack can penetrate one enemy doing -20\U0001F4A5 to the
+    targeted one behind."
+  conditions: []
+  modifiers:
+  - priority: 0
+    logic: 0
+    type: 10
+    value: 1
+    consumedBy: 2
+    minRoll: 0
+    maxRoll: 0
+    newResult: 0
+    effectToApply: {fileID: 0}
+    target: 0
+    triggerOn: 0
+  duration: 99
+  canStack: 1
+  customStatusIcon: "\U0001F361"
+  complexEffects: []
+  references:
+    version: 2
+    RefIds: []

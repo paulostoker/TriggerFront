@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 216869dda44c5ca4fbdbdc8b4f8b7770, type: 3}
+  m_Name: Tactical Pause
+  m_EditorClassIdentifier: 
+  cardName: Tactical Pause
+  cardType: 4
+  portrait: {fileID: 0}
+  symbol: "\U0001F4E3"
+  energyDescription: 
+  freelancerHP: 0
+  weaponName: 
+  weaponCost: 
+  weaponDamage: 0
+  weaponInfo: 
+  abilityName: 
+  abilityCost: 
+  abilityInfo: 
+  ultimateName: 
+  ultimateCost: 
+  ultimateInfo: 
+  footer: 
+  supportInfo: Return a maximum of 5 cards from your hand to the deck, shuffle, and
+    draw 5.
+  conditions: []
+  modifiers: []
+  duration: 1
+  customStatusIcon: 
+  complexEffects: []
+  references:
+    version: 2
+    RefIds: []

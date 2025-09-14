@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: edc6463aeb80f6040b5637c673da4ae8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - gameManager: {instanceID: 0}
+  - endPreparationButton: {instanceID: 0}
+  - player1HandPanel: {fileID: 4232981671012502697, guid: 7d183ba32b38702418704e02e62a943f, type: 3}
+  - player2HandPanel: {fileID: 4051809209830654478, guid: aadb1d59267077e46bd213178e32e1a5, type: 3}
+  - actionMenuPrefab: {fileID: 8517813528801522496, guid: 2cc24e7c31d4c8b41b2701eef492175b, type: 3}
+  - mainCanvasTransform: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

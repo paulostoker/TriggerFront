@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c6f14e5214f83cd44b830ec61c86e586
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - tilePrefab: {fileID: 2203229438363359075, guid: 613056f37d1d53845bfce297d8fb0a4a, type: 3}
+  - obstaclePrefab: {fileID: 930066732902333843, guid: 3bbfb668e2664b042a7a3e947f3d31b8, type: 3}
+  - tileMaterial1: {fileID: 2100000, guid: a24042d4f090f0b46bb8df0170ac65b8, type: 2}
+  - tileMaterial2: {fileID: 2100000, guid: 5d4ff10674d9d0543b0d3931a700a089, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

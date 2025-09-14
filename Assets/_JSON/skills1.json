@@ -1,0 +1,212 @@
+[
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "Off-Angle",
+    "info": "Allows you to climb a medium obstacle in an adjacent tile, granting +2🎲 to your attack. The enemy attacking you also gets +2🎲.",
+    "effectType": "Positional"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "Wide Peek",
+    "info": "Split your movement into two steps and attack between them with +1🎲.",
+    "effectType": "Combat"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "Bunny Hop",
+    "info": "Allows you to move up to +2 additional tiles.",
+    "effectType": "Movement"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "Crosshair Placement",
+    "info": "Shoot with a +2🎲 bonus.",
+    "effectType": "Combat"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "Spray Transfer",
+    "info": "If you take down an enemy, distribute the excess damage to another enemy within attack range. Only for Rifles, SMG, or LMG.",
+    "effectType": "Combat"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "Spray 'n Pray",
+    "info": "Attack two different enemies, rolling a die for each. Both with -2🎲. Only for Rifles, SMG, or LMG.",
+    "effectType": "Combat"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "Line Up",
+    "info": "Throw grenades anywhere on the map, ignoring distance or line of sight.",
+    "effectType": "Utility"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "Anchor",
+    "info": "Don't move this turn and receive +2🎲 defense on the next one.",
+    "effectType": "Defense"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "Wallbang",
+    "info": "Attack an enemy behind a one-tile wide obstacle or a breakable object with -1🎲.",
+    "effectType": "Positional"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "Pre-Fire",
+    "info": "Roll the die before moving, then choose the target and attack with +1🎲.",
+    "effectType": "Combat"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "Clutch",
+    "info": "If you are the last freelancer alive, receive +2🎲 on attack and +1🎲 on defense until the end of the round.",
+    "effectType": "Combat"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "Trade",
+    "info": "If you are on a tile where an ally was taken down or on an adjacent one, attack with +2🎲.",
+    "effectType": "Positional"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "Colateral Damage",
+    "info": "If two enemies are lined up in the same attack line, attack both by rolling a die for each with -1🎲. The closest one will receive the highest damage.",
+    "effectType": "Positional"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "Entry Fragger",
+    "info": "If no enemy has been taken down yet this round, attack any enemy inside a bombsite with +2🎲.",
+    "effectType": "Positional"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "Blind Shot",
+    "info": "Allows you to attack enemies through or inside a smoke without the standard penalty.",
+    "effectType": "Utility"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "Ninja Defuse",
+    "info": "When you start defusing the bomb this turn, you cannot be targeted by attacks or receive damage in the next one.",
+    "effectType": "Utility"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "First Blood",
+    "info": "If no freelancer has been taken down yet this round, attack with +2🎲.",
+    "effectType": "Combat"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "Lurker",
+    "info": "If you are at a distance of at least 🔹8 from any other ally, attack with +2🎲.",
+    "effectType": "Positional"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "Crouch Peek",
+    "info": "Your movement is reduced by half; attack with +1🎲.",
+    "effectType": "Combat"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "Supporter",
+    "info": "Allows you to use your freelancer's ability without consuming 🧰.",
+    "effectType": "Utility"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "Recoil Control",
+    "info": "No need to roll the die to attack; deal the weapon's base damage when firing.",
+    "effectType": "Combat"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "Aim-Down Sight",
+    "info": "Adds +🔹2 to the weapon's range.",
+    "effectType": "Combat"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "In Game Leader",
+    "info": "Give your turn to another allied freelancer.",
+    "effectType": "Utility"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "Carry",
+    "info": "Take the turn of another allied freelancer.",
+    "effectType": "Utility"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "Drop",
+    "info": "You can transfer as many equipped energies as you have to an allied freelancer.",
+    "effectType": "Utility"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "One-Tap",
+    "info": "When rolling the attack die, if the result is 1 to 3, you miss the shot, but if it's 4 to 6, you deal Critical Damage.",
+    "effectType": "Combat"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "Lock-In",
+    "info": "Keep 1🌀 equipped when executing the ultimate.",
+    "effectType": "Utility"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "Run 'n Gun",
+    "info": "Roll the die before moving, deal attack damage with -3🎲 when passing through an enemy's tile.",
+    "effectType": "Movement"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "Baiter",
+    "info": "When attacking, you receive a -3🎲 penalty but grant +3🎲 to the next freelancer's attack.",
+    "effectType": "Utility"
+  },
+  {
+    "type": "Skill",
+    "symbol": "✨",
+    "name": "Jiggle Peek",
+    "info": "Don't attack this turn, but receive +4🎲 defense on the next one.",
+    "effectType": "Defense"
+  }
+]

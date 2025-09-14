@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9e9707c7bc32b24da7537c1065db60a, type: 3}
+  m_Name: Ashes
+  m_EditorClassIdentifier: 
+  name: Ashes
+  HP: 160
+  opClass: Sentinel
+  qualification: Demolisher
+  baseMovement: 4
+  piecePrefab: {fileID: 3093519877135624757, guid: 39e21c4cdcde8de4ca623438abee09f3, type: 3}
+  portrait: {fileID: 9100000, guid: b9969a9841283a840b02203b59bb082e, type: 2}
+  weaponName: Nomad
+  weaponCost:
+    action: 2
+    utility: 0
+    aura: 0
+  weaponType: 1
+  weaponStats:
+    damage: 80
+    range: 8
+    criticalDamage: 50
+    proximityBonus: 20
+  weaponInfo: "Marksman Rifle \U0001F4A580 \U0001F4A08 \u26A0\uFE0F50 \U0001F4A220"
+  techniques:
+  - {fileID: 11400000, guid: 4cac078977f9c1c4e96ff534a7900737, type: 2}
+  ultimate: {fileID: 0}
+  footerInfo: "\U0001F3F0 Sentinel / \U0001F9E8 Demolisher"

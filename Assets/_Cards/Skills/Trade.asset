@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 216869dda44c5ca4fbdbdc8b4f8b7770, type: 3}
+  m_Name: Trade
+  m_EditorClassIdentifier: 
+  cardName: Trade
+  cardType: 3
+  portrait: {fileID: 21300000, guid: a3636b35e77bb2e4280c4668ea7e557d, type: 2}
+  symbol: "\u2728"
+  energyDescription: 
+  freelancerHP: 0
+  weaponName: 
+  weaponCost: 
+  weaponDamage: 0
+  weaponInfo: 
+  abilityName: 
+  abilityCost: 
+  abilityInfo: 
+  ultimateName: 
+  ultimateCost: 
+  ultimateInfo: 
+  footer: 
+  supportInfo: "Grant a +2\U0001F3B2 on your next attack if you are on a tile where
+    an ally was taken down or on an adjacent one."
+  conditions:
+  - type: 3
+    value: 1
+    requiredState: 1
+    isPassiveCondition: 1
+    passiveIcon: "\U0001F91D"
+  modifiers:
+  - priority: 1
+    logic: 0
+    type: 0
+    value: 2
+    consumedBy: 2
+    minRoll: 1
+    maxRoll: 3
+    newResult: 1
+    effectToApply: {fileID: 0}
+    target: 0
+    triggerOn: 0
+  duration: 99
+  canStack: 0
+  customStatusIcon: 
+  complexEffects: []
+  references:
+    version: 2
+    RefIds: []

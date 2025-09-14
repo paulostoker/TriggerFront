@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9e9707c7bc32b24da7537c1065db60a, type: 3}
+  m_Name: Vektor
+  m_EditorClassIdentifier: 
+  name: Vektor
+  HP: 150
+  opClass: Sentinel
+  qualification: Hunter
+  baseMovement: 4
+  piecePrefab: {fileID: 3093519877135624757, guid: 39e21c4cdcde8de4ca623438abee09f3, type: 3}
+  portrait: {fileID: 9100000, guid: 9b3fc57f9bff53741bd2c4de4c339f2f, type: 2}
+  weaponName: Overseer
+  weaponCost:
+    action: 3
+    utility: 0
+    aura: 0
+  weaponType: 2
+  weaponStats:
+    damage: 120
+    range: 8
+    criticalDamage: 40
+    proximityBonus: 20
+  weaponInfo: "Sniper Rifle \U0001F4A5120 \U0001F4A08 \u26A0\uFE0F40 \U0001F4A220"
+  abilityName: Pixel Perfect
+  abilityCost:
+    action: 3
+    utility: 1
+    aura: 0
+  abilityType: Target
+  abilityStats: 
+  abilityInfo: "Marks 1 \U0001F3AF up to \U0001F4A08. If an enemy crosses, fire Overseer.
+    Remove when moving."
+  ultimateName: Final Vector
+  ultimateCost:
+    action: 3
+    utility: 0
+    aura: 3
+  ultimateType: 
+  ultimateStats: 
+  ultimateInfo: "If you haven't moved in the current round, fire Overseer through
+    any obstacle. +2\U0001F3B2"
+  footerInfo: "\U0001F3F0 Sentinel / \U0001F3AF Hunter"

@@ -1,0 +1,212 @@
+[
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Full Buy",
+    "info": "Search your deck for 5 Action cards.",
+    "effectType": "Resource"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Force Buy",
+    "info": "Search your deck for 3 Action cards.",
+    "effectType": "Resource"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Full Utility",
+    "info": "Search your deck for 3 Utility cards.",
+    "effectType": "Resource"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Spend It All",
+    "info": "Search your deck for any 5 Energy cards.",
+    "effectType": "Resource"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Aura Farming",
+    "info": "Search your deck for 3 Aura cards.",
+    "effectType": "Resource"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Synergy",
+    "info": "Search your deck for 2 Skill cards.",
+    "effectType": "Resource"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "New Call",
+    "info": "Discard 1 Strategy card and search your deck for 2 others.",
+    "effectType": "Resource"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Rotation",
+    "info": "If an allied freelancer has already entered a bombsite, all of them cannot attack this turn, but they can move +2🔹.",
+    "effectType": "Movement"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Setup Break",
+    "info": "Force the opponent to return all cards from their hand to their deck, shuffle, and draw the same number of cards returned.",
+    "effectType": "Disruption"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Rush",
+    "info": "All your freelancers can move forward 2 tiles immediately before the freelancer turns.",
+    "effectType": "Movement"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Hold Position",
+    "info": "Your freelancers cannot move this turn but attack with +2🎲.",
+    "effectType": "TeamBuff"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Anti-Eco",
+    "info": "Your freelancers deal +2🎲 attack damage against enemies that are in Eco.",
+    "effectType": "TeamBuff"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Eco Round",
+    "info": "No freelancer can attack or use abilities. In the next round, equip 2 energies per freelancer.",
+    "effectType": "Economy"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Retake",
+    "info": "If you are defending with the bomb planted, all freelancers gain +1🎲 on attack and +1 movement.",
+    "effectType": "TeamBuff"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Post Plant",
+    "info": "If you are on the attack with the bomb planted, freelancers gain +1🎲 attack and +1🎲 defense inside the bombsite until the end of the round.",
+    "effectType": "TeamBuff"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Save for Next",
+    "info": "Discard all cards from your hand this round and draw that many extra cards next round.",
+    "effectType": "Economy"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Mind Games",
+    "info": "Choose 3 cards from the opponent's hand (blindly) to be discarded.",
+    "effectType": "Disruption"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Fake Plant",
+    "info": "Freely choose the freelancer carrying the bomb in your Lobby.",
+    "effectType": "Utility"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Extra Draw",
+    "info": "Draw 3 cards.",
+    "effectType": "Resource"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Save the Drop",
+    "info": "Return the energy cards from a downed freelancer to your hand.",
+    "effectType": "Resource"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Role Swap",
+    "info": "Freely reassign all equipped Energy cards among your freelancers.",
+    "effectType": "Utility"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Do It Again",
+    "info": "Search the discard pile for any card and return it to your hand.",
+    "effectType": "Resource"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "IGL Call",
+    "info": "During this turn, the action order of your freelancers is completely free.",
+    "effectType": "Utility"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Team Shot",
+    "info": "If an enemy is attacked by more than one ally, each attacker after the first receives an additional, cumulative +1🎲.",
+    "effectType": "TeamBuff"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Execution",
+    "info": "During this turn, all 🧰 spent on utilities are returned to the player's hand instead of being discarded.",
+    "effectType": "Resource"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Anti-Strategy",
+    "info": "Force the opponent to unequip one Energy card from each of their freelancers, returning them to their hand.",
+    "effectType": "Disruption"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Tactical Pause",
+    "info": "Return a maximum of 5 cards from your hand to the deck, shuffle, and draw 5.",
+    "effectType": "Resource"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Recon",
+    "info": "Look at the opponent's hand and force them to discard one card.",
+    "effectType": "Disruption"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Stack",
+    "info": "If on defense, receive an additional, cumulative +1🎲 attack for each allied freelancer inside the same bombsite, starting from the second one.",
+    "effectType": "TeamBuff"
+  },
+  {
+    "type": "Strategy",
+    "symbol": "📣",
+    "name": "Play for Time",
+    "info": "Your freelancers cannot move or attack this round; receive +1🎲 defense and draw 3 cards.",
+    "effectType": "Defense"
+  }
+]

@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81641b1fc81b34c4ca61ada25f7cd319, type: 3}
+  m_Name: DeckDefault
+  m_EditorClassIdentifier: 
+  actionCardData: {fileID: 11400000, guid: 249701f479967324cad1af6823761e5f, type: 2}
+  actionCardQuantity: 40
+  utilityCardData: {fileID: 11400000, guid: 935024cee0bb89a4ebcb21188cc65603, type: 2}
+  utilityCardQuantity: 20
+  auraCardData: {fileID: 11400000, guid: 107fbb1024efa64439562932372086dc, type: 2}
+  auraCardQuantity: 8
+  skillCards:
+  - card: {fileID: 11400000, guid: 2de121627d81aca4f9e212983b056a6b, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: 67401a8680781e940890eb999401d7af, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: f867519ca5d4aa74383ae8eef232efd3, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: 1c2afca60a290df4191483401215644e, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: 2d1d0b7d05585c54f896caf85ee68f49, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: b2727dcd38809cd42bf49134827c1466, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: 6f8523127f171e84483cc881f56eb240, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: 1c3a2bde223bd6046abc3c855efc773f, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: 8321e7272f8fcd342ab34cd509e74945, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: a957ce4df2c16f047af4cee636fc1090, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: 5288840258b066543b390be510e46afa, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: 8db32af29a8f65940bc8148915937dc6, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: 60f70305bc700cb448f33aa370bcde9c, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: 4af9d228fee0c1f49b61169813d55410, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: 977e013672b37c444bb5a650bb2b1054, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: 4c8cf19d1ea31c64784b56a75e553e87, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: 04dababc4f16ff946ab1996d4898569d, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: 47734b6f05c548f46b52ba59cd9e0239, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: c3250b1d57289a340aa742f028991e96, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: a9d23cf66b2c77d41917e8c83bb79fe3, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: 34d71fc86c6d9fe438e57eabf44667e3, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: 89eb5764a6efe684e9215e2ae945f529, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: b605324260d917f4e92bf93e04d75886, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: 488167619a8d9e243ac65dc4994217c7, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: 0b43b687bef1e7740a0636e1f1f42825, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: 137747e4fec428748bff96176696e3c5, type: 2}
+    quantity: 1
+  strategyCards:
+  - card: {fileID: 11400000, guid: d55914c67bc3f2241a2c47f2b93621bc, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: 3cca5b511094d7147985c01122cd9e05, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: 38f628a2b4bbf4543a436198b4749149, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: b14835684c69dba409c9c65d66f2120f, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: 5b95b8f117cc78b4180766571f98b9f4, type: 2}
+    quantity: 1
+  - card: {fileID: 11400000, guid: 9b075031c72281745b0a95f7fab20810, type: 2}
+    quantity: 1

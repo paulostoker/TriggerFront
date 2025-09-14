@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9e9707c7bc32b24da7537c1065db60a, type: 3}
+  m_Name: Overkill
+  m_EditorClassIdentifier: 
+  name: Overkill
+  HP: 170
+  opClass: Combatant
+  qualification: Hunter
+  baseMovement: 5
+  piecePrefab: {fileID: 3093519877135624757, guid: 39e21c4cdcde8de4ca623438abee09f3, type: 3}
+  portrait: {fileID: 9100000, guid: 577abc51810620a40b40dc509b83ced6, type: 2}
+  weaponName: Reincarnator
+  weaponCost:
+    action: 3
+    utility: 0
+    aura: 0
+  weaponType: 2
+  weaponStats:
+    damage: 120
+    range: 8
+    criticalDamage: 40
+    proximityBonus: 20
+  weaponInfo: "Sniper Rifle \U0001F4A5120 \U0001F4A08 \u26A0\uFE0F40 \U0001F4A220"
+  abilityName: Quickscope
+  abilityCost:
+    action: 3
+    utility: 2
+    aura: 0
+  abilityType: Counter
+  abilityStats: 
+  abilityInfo: Automatically fires the Reincarnator if attacked
+  ultimateName: Deadly Focus
+  ultimateCost:
+    action: 0
+    utility: 0
+    aura: 2
+  ultimateType: 
+  ultimateStats: 
+  ultimateInfo: After hitting a headshot, gain a free extra attack with -1 on the
+    die.
+  footerInfo: "\u2694\uFE0F Combatant / \U0001F3AF Hunter"

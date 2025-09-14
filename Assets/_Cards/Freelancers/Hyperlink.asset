@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9e9707c7bc32b24da7537c1065db60a, type: 3}
+  m_Name: Hyperlink
+  m_EditorClassIdentifier: 
+  name: Hyperlink
+  HP: 160
+  opClass: Raider
+  qualification: Specialist
+  baseMovement: 6
+  piecePrefab: {fileID: 3093519877135624757, guid: 39e21c4cdcde8de4ca623438abee09f3, type: 3}
+  portrait: {fileID: 9100000, guid: 7e6990ce354061a44b18b7f443f0dee7, type: 2}
+  weaponName: Scyther
+  weaponCost:
+    action: 1
+    utility: 0
+    aura: 0
+  weaponType: 4
+  weaponStats:
+    damage: 60
+    range: 4
+    criticalDamage: 30
+    proximityBonus: 20
+  weaponInfo: "Submachine Gun \U0001F4A560 \U0001F4A04 \u26A0\uFE0F30 \U0001F4A220"
+  abilityName: Debugger
+  abilityCost:
+    action: 0
+    utility: 1
+    aura: 0
+  abilityType: Drone
+  abilityStats: 
+  abilityInfo: "Launches a drone to an adjacent tile with \U0001F4A08 and \u2764\uFE0F10.
+    It sacrifices itself to disarm traps, fires, and smokes."
+  ultimateName: Escape Network
+  ultimateCost:
+    action: 0
+    utility: 0
+    aura: 2
+  ultimateType: 
+  ultimateStats: 
+  ultimateInfo: Teleports this operator to a safe adjacent tile and gives +1 defense.
+  footerInfo: "\U0001F9B6 Raider / \U0001F4BB Specialist"

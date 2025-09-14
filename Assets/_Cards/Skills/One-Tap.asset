@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 216869dda44c5ca4fbdbdc8b4f8b7770, type: 3}
+  m_Name: One-Tap
+  m_EditorClassIdentifier: 
+  cardName: One-Tap
+  cardType: 3
+  portrait: {fileID: 21300000, guid: b749d669be302d14aa9146cccfaf1ff1, type: 2}
+  symbol: "\u2728"
+  energyDescription: 
+  freelancerHP: 0
+  weaponName: 
+  weaponCost: 
+  weaponDamage: 0
+  weaponInfo: 
+  abilityName: 
+  abilityCost: 
+  abilityInfo: 
+  ultimateName: 
+  ultimateCost: 
+  ultimateInfo: 
+  footer: 
+  supportInfo: On your next attack, die results 1-3 becomes a miss, and results 4-6
+    becomes a critical hit.
+  conditions: []
+  modifiers:
+  - priority: 1
+    logic: 1
+    type: 0
+    value: 0
+    consumedBy: 2
+    minRoll: 1
+    maxRoll: 3
+    newResult: 1
+    effectToApply: {fileID: 0}
+    target: 0
+    triggerOn: 0
+  - priority: 1
+    logic: 1
+    type: 0
+    value: 0
+    consumedBy: 2
+    minRoll: 4
+    maxRoll: 6
+    newResult: 6
+    effectToApply: {fileID: 0}
+    target: 0
+    triggerOn: 0
+  duration: 99
+  canStack: 0
+  customStatusIcon: "\u261D"
+  complexEffects: []
+  references:
+    version: 2
+    RefIds: []

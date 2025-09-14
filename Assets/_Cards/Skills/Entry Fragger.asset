@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 216869dda44c5ca4fbdbdc8b4f8b7770, type: 3}
+  m_Name: Entry Fragger
+  m_EditorClassIdentifier: 
+  cardName: Entry Fragger
+  cardType: 3
+  portrait: {fileID: 21300000, guid: 2a536b770124f0642b133dd5d0dc7844, type: 2}
+  symbol: "\u2728"
+  energyDescription: 
+  freelancerHP: 0
+  weaponName: 
+  weaponCost: 
+  weaponDamage: 0
+  weaponInfo: 
+  abilityName: 
+  abilityCost: 
+  abilityInfo: 
+  ultimateName: 
+  ultimateCost: 
+  ultimateInfo: 
+  footer: 
+  supportInfo: "If you are the first on your squad to act this turn, gain +1\U0001F4A0
+    movement and +20\U0001F4A5 damage. The effect is lost after you attack."
+  conditions:
+  - type: 7
+    value: 0
+    requiredState: 1
+    isPassiveCondition: 1
+    passiveIcon: 
+  modifiers:
+  - priority: 0
+    logic: 0
+    type: 2
+    value: 1
+    consumedBy: 2
+    minRoll: 0
+    maxRoll: 0
+    newResult: 0
+    effectToApply: {fileID: 0}
+    target: 0
+    triggerOn: 0
+  - priority: 0
+    logic: 0
+    type: 4
+    value: 20
+    consumedBy: 2
+    minRoll: 0
+    maxRoll: 0
+    newResult: 0
+    effectToApply: {fileID: 0}
+    target: 0
+    triggerOn: 0
+  duration: 99
+  canStack: 0
+  customStatusIcon: "\U0001F6AA"
+  complexEffects: []
+  references:
+    version: 2
+    RefIds: []

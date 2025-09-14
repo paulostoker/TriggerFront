@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 34505622d0b4e2c4d85e99635fa1c5b8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - gridManager: {instanceID: 0}
+  - defaultOperator: {fileID: 11400000, guid: 02eed543dea9dcc4d9af6bce3750c749, type: 2}
+  - highlightMaterial: {fileID: 2100000, guid: c69527b013fb8ed42bb1e6961c3dfac8, type: 2}
+  - player1HandUI: {instanceID: 0}
+  - player2HandUI: {instanceID: 0}
+  - cardUIPrefab: {fileID: 7601884961325270058, guid: 4aa7c36620f59d64490921552786d4a0, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 216869dda44c5ca4fbdbdc8b4f8b7770, type: 3}
+  m_Name: Lurker
+  m_EditorClassIdentifier: 
+  cardName: Lurker
+  cardType: 3
+  portrait: {fileID: 21300000, guid: dd8e110ddd5d2cc47a10be000e683b14, type: 2}
+  symbol: "\u2728"
+  energyDescription: 
+  freelancerHP: 0
+  weaponName: 
+  weaponCost: 
+  weaponDamage: 0
+  weaponInfo: 
+  abilityName: 
+  abilityCost: 
+  abilityInfo: 
+  ultimateName: 
+  ultimateCost: 
+  ultimateInfo: 
+  footer: 
+  supportInfo: "Gain a +2\U0001F3B2 attack bonus if you are at least \U0001F4A08
+    tiles away from every other ally. "
+  conditions:
+  - type: 4
+    value: 8
+    requiredState: 1
+    isPassiveCondition: 1
+    passiveIcon: "\U0001F441"
+  modifiers:
+  - priority: 1
+    logic: 0
+    type: 0
+    value: 2
+    consumedBy: 0
+    minRoll: 1
+    maxRoll: 3
+    newResult: 1
+    effectToApply: {fileID: 0}
+    target: 0
+    triggerOn: 0
+  duration: 99
+  canStack: 0
+  customStatusIcon: 
+  complexEffects: []
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,3621 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1377fed144230ab4fa7fde1a03426d91, type: 3}
+  m_Name: Dust2
+  m_EditorClassIdentifier: 
+  gridWidth: 20
+  gridHeight: 20
+  tiles:
+  - position: {x: 0, y: 0}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 0, y: 1}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 0, y: 2}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 0, y: 3}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 0, y: 4}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle6
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 0, y: 5}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 0, y: 6}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle6
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 0, y: 7}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 0, y: 8}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle6
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 0, y: 9}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle4
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 0, y: 10}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 0, y: 11}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 0, y: 12}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 0, y: 13}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 0, y: 14}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 0, y: 15}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 0, y: 16}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 0, y: 17}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 0, y: 18}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 2
+    obstaclePrefabName: Box1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 0, y: 19}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 1, y: 0}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 1, y: 1}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 1, y: 2}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 1, y: 3}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 1, y: 4}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 1, y: 5}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 1, y: 6}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 1, y: 7}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 1, y: 8}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 1, y: 9}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle4
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 1, y: 10}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 1, y: 11}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 1, y: 12}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 1, y: 13}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 1, y: 14}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 1, y: 15}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 1, y: 16}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 1, y: 17}
+    tilePrefabName: BombsiteHigh3
+    rotation: 0
+    tileYPosition: 0
+    specialType: 4
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 1, y: 18}
+    tilePrefabName: BombsiteHigh3
+    rotation: 0
+    tileYPosition: 0
+    specialType: 4
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 1, y: 19}
+    tilePrefabName: BombsiteHigh3
+    rotation: 0
+    tileYPosition: 0
+    specialType: 4
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 2, y: 0}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 2, y: 1}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 2, y: 2}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 2, y: 3}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 2, y: 4}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 2, y: 5}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 2, y: 6}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 2, y: 7}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 2, y: 8}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 2, y: 9}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 2, y: 10}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 2, y: 11}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 2, y: 12}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 2, y: 13}
+    tilePrefabName: TileHigh2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 2, y: 14}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 2
+    obstaclePrefabName: Box1
+    obstacleRotation: 270
+    obstacleYPosition: 0.6
+  - position: {x: 2, y: 15}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 2, y: 16}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 2, y: 17}
+    tilePrefabName: BombsiteHigh3
+    rotation: 0
+    tileYPosition: 0
+    specialType: 4
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 2, y: 18}
+    tilePrefabName: BombsiteHigh3
+    rotation: 0
+    tileYPosition: 0
+    specialType: 4
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 2, y: 19}
+    tilePrefabName: BombsiteHigh3
+    rotation: 0
+    tileYPosition: 0
+    specialType: 4
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 3, y: 0}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 3, y: 1}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 3, y: 2}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 3, y: 3}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 3, y: 4}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 3, y: 5}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 3, y: 6}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 3, y: 7}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 3, y: 8}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 3, y: 9}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle4
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 3, y: 10}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 3, y: 11}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 3, y: 12}
+    tilePrefabName: TileHigh2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 3, y: 13}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 3, y: 14}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 3, y: 15}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 3, y: 16}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 180
+    obstacleYPosition: 0
+  - position: {x: 3, y: 17}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 2
+    obstaclePrefabName: Box1
+    obstacleRotation: 180
+    obstacleYPosition: 0.6
+  - position: {x: 3, y: 18}
+    tilePrefabName: BombsiteHigh3
+    rotation: 0
+    tileYPosition: 0
+    specialType: 4
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 3, y: 19}
+    tilePrefabName: BombsiteHigh3
+    rotation: 0
+    tileYPosition: 0
+    specialType: 4
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 4, y: 0}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 4, y: 1}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 4, y: 2}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 4, y: 3}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 4, y: 4}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 4, y: 5}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle4
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 4, y: 6}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 4, y: 7}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 4, y: 8}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 4, y: 9}
+    tilePrefabName: TileHigh2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle4
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 4, y: 10}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 4, y: 11}
+    tilePrefabName: TileHigh2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 4, y: 12}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 4, y: 13}
+    tilePrefabName: TileHigh2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 4, y: 14}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle3
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 4, y: 15}
+    tilePrefabName: TileHigh2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle3
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 4, y: 16}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 4, y: 17}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle4
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 4, y: 18}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 4, y: 19}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 5, y: 0}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 5, y: 1}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 5, y: 2}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 5, y: 3}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 5, y: 4}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 5, y: 5}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle4
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 5, y: 6}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 5, y: 7}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 5, y: 8}
+    tilePrefabName: TileHigh2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 5, y: 9}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle3
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 5, y: 10}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 5, y: 11}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 5, y: 12}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 5, y: 13}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle3
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 5, y: 14}
+    tilePrefabName: TileHigh2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle3
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 5, y: 15}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle3
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 5, y: 16}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 5, y: 17}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 5, y: 18}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 5, y: 19}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle6
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 6, y: 0}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 1
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 6, y: 1}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 1
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 6, y: 2}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 6, y: 3}
+    tilePrefabName: TileHigh2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 6, y: 4}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 6, y: 5}
+    tilePrefabName: TileHigh2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle4
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 6, y: 6}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 6, y: 7}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 6, y: 8}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 6, y: 9}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle3
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 6, y: 10}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle3
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 6, y: 11}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle3
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 6, y: 12}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 6, y: 13}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle3
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 6, y: 14}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle3
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 6, y: 15}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle3
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 6, y: 16}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 6, y: 17}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 6, y: 18}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 6, y: 19}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 7, y: 0}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 1
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 7, y: 1}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 1
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 7, y: 2}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 7, y: 3}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 7, y: 4}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 7, y: 5}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle4
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 7, y: 6}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 7, y: 7}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 7, y: 8}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 7, y: 9}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle3
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 7, y: 10}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle3
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 7, y: 11}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 7, y: 12}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 7, y: 13}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 7, y: 14}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 7, y: 15}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 7, y: 16}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 7, y: 17}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 7, y: 18}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle3
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 7, y: 19}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle6
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 8, y: 0}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 1
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 8, y: 1}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 1
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 8, y: 2}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 8, y: 3}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 8, y: 4}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 8, y: 5}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 270
+    obstacleYPosition: 0
+  - position: {x: 8, y: 6}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 8, y: 7}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 8, y: 8}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 8, y: 9}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 8, y: 10}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 8, y: 11}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 8, y: 12}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 8, y: 13}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 8, y: 14}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 8, y: 15}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 8, y: 16}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 8, y: 17}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 8, y: 18}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 8, y: 19}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 9, y: 0}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 9, y: 1}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 9, y: 2}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 9, y: 3}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 9, y: 4}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle3
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 9, y: 5}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle3
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 9, y: 6}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle3
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 9, y: 7}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 9, y: 8}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 9, y: 9}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 9, y: 10}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 9, y: 11}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 2
+    obstaclePrefabName: Box1
+    obstacleRotation: 180
+    obstacleYPosition: 0.2
+  - position: {x: 9, y: 12}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 9, y: 13}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 270
+    obstacleYPosition: 0.6
+  - position: {x: 9, y: 14}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 9, y: 15}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 9, y: 16}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 9, y: 17}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 9, y: 18}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle3
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 9, y: 19}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle6
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 10, y: 0}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 10, y: 1}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 10, y: 2}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 10, y: 3}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 10, y: 4}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle3
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 10, y: 5}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle3
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 10, y: 6}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle3
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 10, y: 7}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 10, y: 8}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 10, y: 9}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 10, y: 10}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 10, y: 11}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 10, y: 12}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 10, y: 13}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 270
+    obstacleYPosition: 0.6
+  - position: {x: 10, y: 14}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle2
+    obstacleRotation: 270
+    obstacleYPosition: 0.6
+  - position: {x: 10, y: 15}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 2
+    obstaclePrefabName: Box1
+    obstacleRotation: 0
+    obstacleYPosition: 0.2
+  - position: {x: 10, y: 16}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 10, y: 17}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 10, y: 18}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 10, y: 19}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 11, y: 0}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 11, y: 1}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 11, y: 2}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 11, y: 3}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 11, y: 4}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 11, y: 5}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 2
+    obstaclePrefabName: Box1
+    obstacleRotation: 0
+    obstacleYPosition: 0.4
+  - position: {x: 11, y: 6}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 11, y: 7}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 11, y: 8}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 11, y: 9}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle2
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 11, y: 10}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle2
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 11, y: 11}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 11, y: 12}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 270
+    obstacleYPosition: 0
+  - position: {x: 11, y: 13}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 270
+    obstacleYPosition: 0.6
+  - position: {x: 11, y: 14}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 11, y: 15}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 11, y: 16}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 11, y: 17}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 11, y: 18}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 2
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 11, y: 19}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 2
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 12, y: 0}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 12, y: 1}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 12, y: 2}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 12, y: 3}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 12, y: 4}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 12, y: 5}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 12, y: 6}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 12, y: 7}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 12, y: 8}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle2
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 12, y: 9}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle4
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 12, y: 10}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle4
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 12, y: 11}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle4
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 12, y: 12}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 12, y: 13}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 12, y: 14}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 12, y: 15}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 12, y: 16}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 12, y: 17}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 12, y: 18}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 2
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 12, y: 19}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 2
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 13, y: 0}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 13, y: 1}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 13, y: 2}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 13, y: 3}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 13, y: 4}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 13, y: 5}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 13, y: 6}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 13, y: 7}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 13, y: 8}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 13, y: 9}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle4
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 13, y: 10}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle4
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 13, y: 11}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle4
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 13, y: 12}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 13, y: 13}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 13, y: 14}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 13, y: 15}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 13, y: 16}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 13, y: 17}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 13, y: 18}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 2
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 13, y: 19}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 2
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 14, y: 0}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle3
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 14, y: 1}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle3
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 14, y: 2}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 14, y: 3}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 14, y: 4}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 14, y: 5}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 14, y: 6}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 14, y: 7}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 14, y: 8}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 14, y: 9}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 14, y: 10}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 14, y: 11}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 14, y: 12}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 14, y: 13}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 14, y: 14}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 14, y: 15}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 14, y: 16}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 14, y: 17}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 14, y: 18}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 14, y: 19}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle4
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 15, y: 0}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle3
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 15, y: 1}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle3
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 15, y: 2}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 15, y: 3}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 15, y: 4}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 15, y: 5}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 15, y: 6}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 15, y: 7}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 15, y: 8}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 15, y: 9}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 15, y: 10}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 15, y: 11}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 2
+    obstaclePrefabName: Box1
+    obstacleRotation: 90
+    obstacleYPosition: 0.4
+  - position: {x: 15, y: 12}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 15, y: 13}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 15, y: 14}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 15, y: 15}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 15, y: 16}
+    tilePrefabName: BombsiteHigh3
+    rotation: 0
+    tileYPosition: 0
+    specialType: 3
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 15, y: 17}
+    tilePrefabName: BombsiteHigh3
+    rotation: 0
+    tileYPosition: 0
+    specialType: 3
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 15, y: 18}
+    tilePrefabName: BombsiteHigh3
+    rotation: 0
+    tileYPosition: 0
+    specialType: 3
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 15, y: 19}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle4
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 16, y: 0}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 16, y: 1}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle2
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 16, y: 2}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle4
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 16, y: 3}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle4
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 16, y: 4}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle2
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 16, y: 5}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 16, y: 6}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 16, y: 7}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 16, y: 8}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 16, y: 9}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 16, y: 10}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 16, y: 11}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 16, y: 12}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 16, y: 13}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle6
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 16, y: 14}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 16, y: 15}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 16, y: 16}
+    tilePrefabName: BombsiteHigh3
+    rotation: 0
+    tileYPosition: 0
+    specialType: 3
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 16, y: 17}
+    tilePrefabName: BombsiteHigh3
+    rotation: 0
+    tileYPosition: 0
+    specialType: 3
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 16, y: 18}
+    tilePrefabName: BombsiteHigh3
+    rotation: 0
+    tileYPosition: 0
+    specialType: 3
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 16, y: 19}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 17, y: 0}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle2
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 17, y: 1}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 17, y: 2}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle4
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 17, y: 3}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle4
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 17, y: 4}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 17, y: 5}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 17, y: 6}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 17, y: 7}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 17, y: 8}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 17, y: 9}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 17, y: 10}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 17, y: 11}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 17, y: 12}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 17, y: 13}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 17, y: 14}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 17, y: 15}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 17, y: 16}
+    tilePrefabName: BombsiteHigh3
+    rotation: 0
+    tileYPosition: 0
+    specialType: 3
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 17, y: 17}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 2
+    obstaclePrefabName: Box1
+    obstacleRotation: 270
+    obstacleYPosition: 0.6
+  - position: {x: 17, y: 18}
+    tilePrefabName: BombsiteHigh3
+    rotation: 0
+    tileYPosition: 0
+    specialType: 3
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 17, y: 19}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 18, y: 0}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle2
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 18, y: 1}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 18, y: 2}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 18, y: 3}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 18, y: 4}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 18, y: 5}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 18, y: 6}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 18, y: 7}
+    tilePrefabName: TileLow2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 18, y: 8}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 18, y: 9}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 18, y: 10}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 18, y: 11}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 18, y: 12}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 18, y: 13}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 18, y: 14}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 18, y: 15}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 18, y: 16}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 18, y: 17}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 18, y: 18}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 18, y: 19}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 19, y: 0}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 19, y: 1}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle2
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 19, y: 2}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle2
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 19, y: 3}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle2
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 19, y: 4}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle2
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 19, y: 5}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 19, y: 6}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 19, y: 7}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 19, y: 8}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 19, y: 9}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 19, y: 10}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 19, y: 11}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 19, y: 12}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle3
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 19, y: 13}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 19, y: 14}
+    tilePrefabName: TileMedium2
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 19, y: 15}
+    tilePrefabName: TileMedium1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 0
+    obstaclePrefabName: 
+    obstacleRotation: 0
+    obstacleYPosition: 0
+  - position: {x: 19, y: 16}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 19, y: 17}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle1
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 19, y: 18}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  - position: {x: 19, y: 19}
+    tilePrefabName: TileHigh1
+    rotation: 0
+    tileYPosition: 0
+    specialType: 0
+    obstacleType: 1
+    obstaclePrefabName: Obstacle5
+    obstacleRotation: 0
+    obstacleYPosition: 0.6
+  extraObjects: []
+  mapName: Dust2
+  mapDescription: 
+  authorName: 

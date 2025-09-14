@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9e9707c7bc32b24da7537c1065db60a, type: 3}
+  m_Name: Echoes
+  m_EditorClassIdentifier: 
+  name: Echoes
+  HP: 190
+  opClass: Supporter
+  qualification: gunner
+  baseMovement: 5
+  piecePrefab: {fileID: 3093519877135624757, guid: 39e21c4cdcde8de4ca623438abee09f3, type: 3}
+  portrait: {fileID: 9100000, guid: 17c6f3afed87c4a4d8d067c4a27e9d71, type: 2}
+  weaponName: Commander
+  weaponCost:
+    action: 2
+    utility: 0
+    aura: 0
+  weaponType: 0
+  weaponStats:
+    damage: 100
+    range: 6
+    criticalDamage: 30
+    proximityBonus: 20
+  weaponInfo: "Assault Rifle \U0001F4A5100 \U0001F4A06 \u26A0\uFE0F30 \U0001F4A220"
+  techniques:
+  - {fileID: 11400000, guid: 8b4fee1a3485c4d4bb1e73f485af4b81, type: 2}
+  ultimate: {fileID: 0}
+  footerInfo: "\U0001F9F0 Supporter / \U0001F52B Gunner"

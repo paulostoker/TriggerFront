@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9e9707c7bc32b24da7537c1065db60a, type: 3}
+  m_Name: Volt
+  m_EditorClassIdentifier: 
+  name: Volt
+  HP: 180
+  opClass: Combatant
+  qualification: gunner
+  baseMovement: 5
+  piecePrefab: {fileID: 3093519877135624757, guid: 39e21c4cdcde8de4ca623438abee09f3, type: 3}
+  portrait: {fileID: 9100000, guid: 878909990010ece49a75d04bc014ff54, type: 2}
+  weaponName: Aegis
+  weaponCost:
+    action: 2
+    utility: 0
+    aura: 0
+  weaponType: 0
+  weaponStats:
+    damage: 100
+    range: 6
+    criticalDamage: 30
+    proximityBonus: 20
+  weaponInfo: "Assault Rifle \U0001F4A5100 \U0001F4A06 \u26A0\uFE0F30 \U0001F4A220"
+  abilityName: Adrenal Boost
+  abilityCost:
+    action: 0
+    utility: 1
+    aura: 0
+  abilityType: Buff
+  abilityStats: 
+  abilityInfo: Gains +1 attack and +1 movement this turn if you eliminate an enemy.
+  ultimateName: Kinetic Impact
+  ultimateCost:
+    action: 3
+    utility: 0
+    aura: 0
+  ultimateType: 
+  ultimateStats: 
+  ultimateInfo: Charged shot that causes +30 additional damage and pushes the enemy
+    1 tile.
+  footerInfo: "\u2694\uFE0F Combatant / \U0001F52B Gunner"

@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 216869dda44c5ca4fbdbdc8b4f8b7770, type: 3}
+  m_Name: Aura Farming
+  m_EditorClassIdentifier: 
+  cardName: Aura Farming
+  cardType: 4
+  portrait: {fileID: 21300000, guid: a6a5248d1bb7aa049928a51a4e039a73, type: 2}
+  symbol: "\U0001F4E3"
+  energyDescription: 
+  freelancerHP: 0
+  weaponName: 
+  weaponCost: 
+  weaponDamage: 0
+  weaponInfo: 
+  techniqueName: 
+  techniqueCost: 
+  techniqueInfo: 
+  ultimateName: 
+  ultimateCost: 
+  ultimateInfo: 
+  footer: 
+  supportInfo: Search your deck for 3 Aura cards.
+  conditions: []
+  modifiers:
+  - priority: 0
+    logic: 4
+    type: 0
+    value: 3
+    consumedBy: 0
+    minRoll: 0
+    maxRoll: 0
+    newResult: 0
+    effectToApply: {fileID: 0}
+    target: 0
+    triggerOn: 0
+    cardTypeToSearch: 2
+  duration: 1
+  canStack: 1
+  customStatusIcon: 
+  complexEffects: []
+  references:
+    version: 2
+    RefIds: []

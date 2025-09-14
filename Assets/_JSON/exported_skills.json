@@ -1,0 +1,654 @@
+[
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "Aim-Down Sight",
+            "info": "Adds +💠2 to the weapon's range.",
+            "duration": 99,
+            "customStatusIcon": "",
+            "conditions": [],
+            "modifiers": [
+                {
+                    "logic": "Additive",
+                    "type": "WeaponRange",
+                    "value": 2,
+                    "consumedBy": "Attack",
+                    "minRoll": 1,
+                    "maxRoll": 3,
+                    "newResult": 1
+                }
+            ]
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "Anchor",
+            "info": "Anchor your position to gain +2🎲 on defense. The bonus lasts until you move or are targeted by an attack.",
+            "duration": 99,
+            "customStatusIcon": "",
+            "conditions": [],
+            "modifiers": [
+                {
+                    "logic": "Additive",
+                    "type": "DefenseDice",
+                    "value": 2,
+                    "consumedBy": "Movement, GetTargeted",
+                    "minRoll": 1,
+                    "maxRoll": 3,
+                    "newResult": 1
+                }
+            ]
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "Baiter",
+            "info": "When attacking, you receive a -3🎲 penalty but grant +3🎲 to the next operator's attack.",
+            "duration": 99,
+            "customStatusIcon": "🎣",
+            "conditions": [],
+            "modifiers": [
+                {
+                    "logic": "ApplyEffect",
+                    "type": "AttackDice",
+                    "value": -3,
+                    "consumedBy": "Attack",
+                    "minRoll": 0,
+                    "maxRoll": 0,
+                    "newResult": 0
+                },
+                {
+                    "logic": "Additive",
+                    "type": "AttackDice",
+                    "value": -3,
+                    "consumedBy": "Attack",
+                    "minRoll": 0,
+                    "maxRoll": 0,
+                    "newResult": 0
+                }
+            ]
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "Blind Shot",
+            "info": "Allows you to attack enemies through or inside a smoke without the standard penalty.",
+            "duration": 1,
+            "customStatusIcon": "",
+            "conditions": [],
+            "modifiers": []
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "Bunny Hop",
+            "info": "Allows you to move up to +2 additional tiles.",
+            "duration": 99,
+            "customStatusIcon": "",
+            "conditions": [],
+            "modifiers": [
+                {
+                    "logic": "Additive",
+                    "type": "Movement",
+                    "value": 2,
+                    "consumedBy": "Movement",
+                    "minRoll": 1,
+                    "maxRoll": 3,
+                    "newResult": 1
+                }
+            ]
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "Carry",
+            "info": "Take the turn of another allied operator.",
+            "duration": 1,
+            "customStatusIcon": "",
+            "conditions": [],
+            "modifiers": []
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "Clutch",
+            "info": "If you are the last freelancer standing on your team, gain +2🎲 on attack and +1🎲 on defense for the rest of the round.",
+            "duration": 99,
+            "customStatusIcon": "",
+            "conditions": [
+                {
+                    "type": "AllAlliesAlive",
+                    "value": 0,
+                    "passiveIcon": "🧤",
+                    "requiredState": false,
+                    "isPassiveCondition": true
+                }
+            ],
+            "modifiers": [
+                {
+                    "logic": "Additive",
+                    "type": "AttackDice",
+                    "value": 2,
+                    "consumedBy": "None",
+                    "minRoll": 0,
+                    "maxRoll": 0,
+                    "newResult": 0
+                },
+                {
+                    "logic": "Additive",
+                    "type": "DefenseDice",
+                    "value": 1,
+                    "consumedBy": "None",
+                    "minRoll": 0,
+                    "maxRoll": 0,
+                    "newResult": 0
+                }
+            ]
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "Collateral Damage",
+            "info": "If two enemies are lined up in the same attack line, attack both by rolling a die for each with -1🎲. The closest one will receive the highest damage.",
+            "duration": 99,
+            "customStatusIcon": "🍡",
+            "conditions": [],
+            "modifiers": [
+                {
+                    "logic": "Additive",
+                    "type": "CanCollateralDamage",
+                    "value": 1,
+                    "consumedBy": "Attack",
+                    "minRoll": 0,
+                    "maxRoll": 0,
+                    "newResult": 0
+                }
+            ]
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "Crosshair Placement",
+            "info": "Shoot with a +2🎲 bonus.",
+            "duration": 99,
+            "customStatusIcon": "",
+            "conditions": [],
+            "modifiers": [
+                {
+                    "logic": "Additive",
+                    "type": "AttackDice",
+                    "value": 2,
+                    "consumedBy": "Attack",
+                    "minRoll": 1,
+                    "maxRoll": 3,
+                    "newResult": 1
+                }
+            ]
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "Crouch Peek",
+            "info": "Your movement is reduced by 💠2; attack with +1 and +1 range.🎲.",
+            "duration": 99,
+            "customStatusIcon": "",
+            "conditions": [],
+            "modifiers": [
+                {
+                    "logic": "Additive",
+                    "type": "Movement",
+                    "value": -2,
+                    "consumedBy": "Attack",
+                    "minRoll": 0,
+                    "maxRoll": 0,
+                    "newResult": 0
+                },
+                {
+                    "logic": "Additive",
+                    "type": "WeaponRange",
+                    "value": 1,
+                    "consumedBy": "Attack",
+                    "minRoll": 0,
+                    "maxRoll": 0,
+                    "newResult": 0
+                },
+                {
+                    "logic": "Additive",
+                    "type": "AttackDice",
+                    "value": 1,
+                    "consumedBy": "Attack",
+                    "minRoll": 0,
+                    "maxRoll": 0,
+                    "newResult": 0
+                }
+            ]
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "Drop",
+            "info": "You can transfer as many equipped energies as you have to an allied operator.",
+            "duration": 1,
+            "customStatusIcon": "",
+            "conditions": [
+                {
+                    "type": "HasEnergyEquipped",
+                    "value": 1,
+                    "passiveIcon": "",
+                    "requiredState": true,
+                    "isPassiveCondition": false
+                }
+            ],
+            "modifiers": [
+                {
+                    "logic": "Additive",
+                    "type": "CanTransferEnergy",
+                    "value": 0,
+                    "consumedBy": "None",
+                    "minRoll": 0,
+                    "maxRoll": 0,
+                    "newResult": 0
+                }
+            ]
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "Entry Fragger",
+            "info": "If you are the first on your team to act this turn, gain +1💠 Movement and +20💥 bonus damage. This effect is lost after you attack.",
+            "duration": 99,
+            "customStatusIcon": "🚪",
+            "conditions": [
+                {
+                    "type": "FirstTeamAction",
+                    "value": 0,
+                    "passiveIcon": "",
+                    "requiredState": true,
+                    "isPassiveCondition": true
+                }
+            ],
+            "modifiers": [
+                {
+                    "logic": "Additive",
+                    "type": "Movement",
+                    "value": 1,
+                    "consumedBy": "Attack",
+                    "minRoll": 0,
+                    "maxRoll": 0,
+                    "newResult": 0
+                },
+                {
+                    "logic": "Additive",
+                    "type": "Damage",
+                    "value": 20,
+                    "consumedBy": "Attack",
+                    "minRoll": 0,
+                    "maxRoll": 0,
+                    "newResult": 0
+                }
+            ]
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "First Blood",
+            "info": "If no operator has been taken down yet, attack with +2🎲",
+            "duration": 99,
+            "customStatusIcon": "",
+            "conditions": [
+                {
+                    "type": "NoKillsInRound",
+                    "value": 0,
+                    "passiveIcon": "",
+                    "requiredState": true,
+                    "isPassiveCondition": true
+                }
+            ],
+            "modifiers": [
+                {
+                    "logic": "Additive",
+                    "type": "AttackDice",
+                    "value": 2,
+                    "consumedBy": "None",
+                    "minRoll": 1,
+                    "maxRoll": 3,
+                    "newResult": 1
+                }
+            ]
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "In Game Leader",
+            "info": "Give your turn to another allied operator.",
+            "duration": 1,
+            "customStatusIcon": "",
+            "conditions": [],
+            "modifiers": []
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "Jiggle Peek",
+            "info": "Don't attack this turn, but receive +4🎲 defense on the next one.",
+            "duration": 2,
+            "customStatusIcon": "",
+            "conditions": [
+                {
+                    "type": "HasNotActed",
+                    "value": 0,
+                    "passiveIcon": "",
+                    "requiredState": true,
+                    "isPassiveCondition": false
+                }
+            ],
+            "modifiers": [
+                {
+                    "logic": "Additive",
+                    "type": "ForbidAttack",
+                    "value": 0,
+                    "consumedBy": "None",
+                    "minRoll": 0,
+                    "maxRoll": 0,
+                    "newResult": 0
+                },
+                {
+                    "logic": "Additive",
+                    "type": "DefenseDice",
+                    "value": 4,
+                    "consumedBy": "None",
+                    "minRoll": 0,
+                    "maxRoll": 0,
+                    "newResult": 0
+                }
+            ]
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "Line Up",
+            "info": "Throw grenades anywhere on the map, ignoring distance or line of sight.",
+            "duration": 1,
+            "customStatusIcon": "",
+            "conditions": [],
+            "modifiers": []
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "Lock-In",
+            "info": "Keep 1🌀 equipped when executing the ultimate.",
+            "duration": 1,
+            "customStatusIcon": "",
+            "conditions": [],
+            "modifiers": []
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "Lurker",
+            "info": "Gain a +2🎲 attack bonus if you are at least 8 tiles away from every other ally. This effect is only available as long as all your allies are alive.",
+            "duration": 99,
+            "customStatusIcon": "",
+            "conditions": [
+                {
+                    "type": "MinDistanceToAllies",
+                    "value": 8,
+                    "passiveIcon": "👁",
+                    "requiredState": true,
+                    "isPassiveCondition": true
+                },
+                {
+                    "type": "AllAlliesAlive",
+                    "value": 0,
+                    "passiveIcon": "",
+                    "requiredState": true,
+                    "isPassiveCondition": true
+                }
+            ],
+            "modifiers": [
+                {
+                    "logic": "Additive",
+                    "type": "AttackDice",
+                    "value": 2,
+                    "consumedBy": "None",
+                    "minRoll": 1,
+                    "maxRoll": 3,
+                    "newResult": 1
+                }
+            ]
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "Ninja Defuse",
+            "info": "When you start defusing the bomb, you cannot be targeted by attacks or receive damage in the next one.",
+            "duration": 99,
+            "customStatusIcon": "🐱‍👤",
+            "conditions": [],
+            "modifiers": [
+                {
+                    "logic": "ApplyEffect",
+                    "type": "DamageReduction",
+                    "value": 1,
+                    "consumedBy": "None",
+                    "minRoll": 0,
+                    "maxRoll": 0,
+                    "newResult": 0
+                }
+            ]
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "Off-Angle",
+            "info": "Climb over any Box within your movement range to gain +2⚔ and +2🎯 at the cost of -3🛡. This effect lasts until you climb down.",
+            "duration": 99,
+            "customStatusIcon": "🧗",
+            "conditions": [],
+            "modifiers": [
+                {
+                    "logic": "Additive",
+                    "type": "HasOffAngleCardActive",
+                    "value": 1,
+                    "consumedBy": "None",
+                    "minRoll": 0,
+                    "maxRoll": 0,
+                    "newResult": 0
+                }
+            ]
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "One-Tap",
+            "info": " On your next attack roll, results 1-3 become a miss, and results 4-6 become a critical hit.",
+            "duration": 99,
+            "customStatusIcon": "☝",
+            "conditions": [],
+            "modifiers": [
+                {
+                    "logic": "ResultMap",
+                    "type": "AttackDice",
+                    "value": 0,
+                    "consumedBy": "Attack",
+                    "minRoll": 1,
+                    "maxRoll": 3,
+                    "newResult": 1
+                },
+                {
+                    "logic": "ResultMap",
+                    "type": "AttackDice",
+                    "value": 0,
+                    "consumedBy": "Attack",
+                    "minRoll": 4,
+                    "maxRoll": 6,
+                    "newResult": 6
+                }
+            ]
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "Pre-Fire",
+            "info": "Roll the die before moving, then choose the target and attack with +1🎲.",
+            "duration": 1,
+            "customStatusIcon": "",
+            "conditions": [],
+            "modifiers": []
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "Recoil Control",
+            "info": "No need to roll the die to attack; deal the weapon's base damage when firing.",
+            "duration": 99,
+            "customStatusIcon": "➰",
+            "conditions": [],
+            "modifiers": [
+                {
+                    "logic": "SetDamage",
+                    "type": "AttackDice",
+                    "value": 0,
+                    "consumedBy": "Attack",
+                    "minRoll": 0,
+                    "maxRoll": 0,
+                    "newResult": 0
+                }
+            ]
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "Run 'n Gun",
+            "info": "Roll the die before moving, deal attack damage with -3🎲 when passing through an enemy's tile.",
+            "duration": 1,
+            "customStatusIcon": "",
+            "conditions": [],
+            "modifiers": []
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "Spray 'n Pray",
+            "info": "Attack two different enemies, rolling a die for each. Both with -2🎲. Only for Rifles, SMG, or LMG.",
+            "duration": 1,
+            "customStatusIcon": "",
+            "conditions": [],
+            "modifiers": []
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "Spray Transfer",
+            "info": "If you take down an enemy, distribute the excess damage to another enemy within attack range. Only for Rifles, SMG, or LMG.",
+            "duration": 1,
+            "customStatusIcon": "",
+            "conditions": [],
+            "modifiers": []
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "Supporter",
+            "info": "Allows you to use your operator's ability without consuming 🧰.",
+            "duration": 1,
+            "customStatusIcon": "",
+            "conditions": [],
+            "modifiers": []
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "Trade",
+            "info": "Grant a +2🎲 on your next attack if you are on a tile where an ally was taken down or on an adjacent one.",
+            "duration": 99,
+            "customStatusIcon": "",
+            "conditions": [
+                {
+                    "type": "ProximityToAllyDeath",
+                    "value": 1,
+                    "passiveIcon": "🤝",
+                    "requiredState": true,
+                    "isPassiveCondition": true
+                }
+            ],
+            "modifiers": [
+                {
+                    "logic": "Additive",
+                    "type": "AttackDice",
+                    "value": 2,
+                    "consumedBy": "Attack",
+                    "minRoll": 1,
+                    "maxRoll": 3,
+                    "newResult": 1
+                }
+            ]
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "Wallbang",
+            "info": "Your next attack can penetrate a one-tile wide obstacle with -20💥.",
+            "duration": 99,
+            "customStatusIcon": "🧱",
+            "conditions": [],
+            "modifiers": [
+                {
+                    "logic": "Additive",
+                    "type": "WallbangDamage",
+                    "value": -20,
+                    "consumedBy": "Attack",
+                    "minRoll": 0,
+                    "maxRoll": 0,
+                    "newResult": 0
+                },
+                {
+                    "logic": "Additive",
+                    "type": "AllowWallbang",
+                    "value": 1,
+                    "consumedBy": "Attack",
+                    "minRoll": 0,
+                    "maxRoll": 0,
+                    "newResult": 0
+                }
+            ]
+        },
+        {
+            "type": "Skill",
+            "symbol": "✨",
+            "name": "Wide Peek",
+            "info": "If you hasn't moved already, you can split your movement into two steps and attack between them (or not) with +1⚔",
+            "duration": 0,
+            "customStatusIcon": "🚶",
+            "conditions": [
+                {
+                    "type": "HasNotMoved",
+                    "value": 0,
+                    "passiveIcon": "",
+                    "requiredState": true,
+                    "isPassiveCondition": false
+                }
+            ],
+            "modifiers": [
+                {
+                    "logic": "Additive",
+                    "type": "CanWidePeek",
+                    "value": 1,
+                    "consumedBy": "None",
+                    "minRoll": 0,
+                    "maxRoll": 0,
+                    "newResult": 0
+                },
+                {
+                    "logic": "Additive",
+                    "type": "AttackDice",
+                    "value": 1,
+                    "consumedBy": "Attack",
+                    "minRoll": 0,
+                    "maxRoll": 0,
+                    "newResult": 0
+                }
+            ]
+        }
+    ]
