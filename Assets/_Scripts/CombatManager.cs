@@ -5,13 +5,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System;
 using static ServiceLocator;
+using Unity.Netcode;
 
 public class CoroutineResult<T>
 {
     public T result;
 }
 
-public class CombatManager : MonoBehaviour
+public class CombatManager : NetworkBehaviour
 {
     #region Fields & Properties
     [Header("Visual Settings")]
@@ -915,16 +916,138 @@ public class CombatManager : MonoBehaviour
     }
     #endregion
 
-    #region Unity Cleanup
-    void OnDestroy()
+    #region Networking
+public NetworkList<FreelancerState> SyncedFreelancers;
+
+public override void OnNetworkSpawn()
+{
+    if (IsServer)
     {
-        StopAllCoroutines();
-        CancelAttackMode();
-        OnDamageDealt = null;
-        OnAttackStarted = null;
-        OnAttackCompleted = null;
-        OnAttackCancelled = null;
+        SyncedFreelancers = new NetworkList<FreelancerState>();
+        SyncedFreelancers.OnListChanged += OnSyncedFreelancersChangedServer;
     }
+    else
+    {
+        SyncedFreelancers = new NetworkList<FreelancerState>();
+        SyncedFreelancers.OnListChanged += OnSyncedFreelancersChangedClient;
+    }
+}
+
+
+
+void OnSyncedFreelancersChangedServer(Unity.Netcode.NetworkListEvent<FreelancerState> change)
+{
+}
+
+    void OnSyncedFreelancersChangedClient(Unity.Netcode.NetworkListEvent<FreelancerState> change)
+    {
+        if (SyncedFreelancers == null) return;
+        foreach (var st in SyncedFreelancers)
+        {
+            Client_ApplyFreelancerState(st);
+        }
+    }
+public void Server_PopulateSyncedFreelancers()
+{
+    if (!IsServer) return;
+    if (SyncedFreelancers == null) return;
+
+    SyncedFreelancers.Clear();
+
+    var all = ServiceLocator.Freelancers.GetAllFreelancerInstances();
+    var teamP1 = all.Where(f => f.IsPlayer1).ToList();
+    var teamP2 = all.Where(f => !f.IsPlayer1).ToList();
+
+    for (int i = 0; i < teamP1.Count; i++)
+    {
+        var inst = teamP1[i];
+        var piece = inst.PieceGameObject;
+        int x = 0;
+        int z = 0;
+        var tile = ServiceLocator.Grid.GetTileUnderPiece(piece);
+        if (tile != null)
+        {
+            x = tile.x;
+            z = tile.z;
+        }
+        var st = new FreelancerState
+        {
+            freelancerId = i,
+            currentHP = inst.CurrentHP,
+            isAlive = inst.IsAlive,
+            hasMovedThisTurn = inst.HasMovedThisTurn,
+            hasActedThisTurn = inst.HasActedThisTurn,
+            isPlayer1 = true,
+            tileX = x,
+            tileZ = z
+        };
+        SyncedFreelancers.Add(st);
+    }
+
+    for (int i = 0; i < teamP2.Count; i++)
+    {
+        var inst = teamP2[i];
+        var piece = inst.PieceGameObject;
+        int x = 0;
+        int z = 0;
+        var tile = ServiceLocator.Grid.GetTileUnderPiece(piece);
+        if (tile != null)
+        {
+            x = tile.x;
+            z = tile.z;
+        }
+        var st = new FreelancerState
+        {
+            freelancerId = i,
+            currentHP = inst.CurrentHP,
+            isAlive = inst.IsAlive,
+            hasMovedThisTurn = inst.HasMovedThisTurn,
+            hasActedThisTurn = inst.HasActedThisTurn,
+            isPlayer1 = false,
+            tileX = x,
+            tileZ = z
+        };
+        SyncedFreelancers.Add(st);
+    }
+}
+
+void Client_ApplyFreelancerState(FreelancerState st)
+{
+    var inst = ServiceLocator.Freelancers.GetFreelancerByIndex(st.isPlayer1, st.freelancerId);
+    if (inst == null) return;
+    var piece = inst.PieceGameObject;
+    if (piece == null) return;
+
+    inst.CurrentHP = st.currentHP;
+    inst.IsAlive = st.isAlive;
+    inst.HasMovedThisTurn = st.hasMovedThisTurn;
+    inst.HasActedThisTurn = st.hasActedThisTurn;
+
+    var gridPos = new Vector2Int(st.tileX, st.tileZ);
+    var worldPos = ServiceLocator.Pieces.GetRaycastPositionOnTile(gridPos);
+    piece.transform.position = worldPos;
+    ServiceLocator.Pieces.UpdatePiecePositionWithRaycast(piece);
+}
+
+
+#endregion
+
+
+    #region Unity Cleanup
+void OnDestroy()
+{
+    StopAllCoroutines();
+    CancelAttackMode();
+    OnDamageDealt = null;
+    OnAttackStarted = null;
+    OnAttackCompleted = null;
+    OnAttackCancelled = null;
+    if (SyncedFreelancers != null)
+    {
+        SyncedFreelancers.OnListChanged -= OnSyncedFreelancersChangedServer;
+        SyncedFreelancers.OnListChanged -= OnSyncedFreelancersChangedClient;
+    }
+}
     public static void ResetStaticData()
     {
         OnDamageDealt = null;

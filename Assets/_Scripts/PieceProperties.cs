@@ -1,7 +1,7 @@
 // _Scripts/PieceProperties.cs
 using UnityEngine;
 
-// Este componente atua como um marcador para identificar GameObjects que são peças de operadores.
+// Este componente atua como um marcador para identificar GameObjects que são peças de freelancers
 public class PieceProperties : MonoBehaviour
 {
     // Por enquanto, este script pode ficar vazio.

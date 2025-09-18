@@ -34,6 +34,9 @@ public class GameManager : MonoBehaviour
     public CanvasGroup fadeFromBlackPanel;
 
     [Header("Game Mode Settings")]
+    [SerializeField] private bool devFallbackOnTimeout = false;
+[SerializeField] private float devFallbackTimeout = 6f;
+private bool _started;
     public bool isPlayer1Attacker = true;
 
     public List<FreelancerData> Player1FreelancerDeck { get; private set; }
@@ -49,38 +52,65 @@ public class GameManager : MonoBehaviour
 
     #region Unity Lifecycle
     void Awake()
+{
+    GameSessionManager gameSession = GameSessionManager.Instance;
+
+    if (gameSession != null && gameSession.SelectedAttackers.Count == 5 && gameSession.SelectedDefenders.Count == 5)
     {
-        GameSessionManager gameSession = GameSessionManager.Instance;
-        if (gameSession != null && gameSession.SelectedAttackers.Count == 5 && gameSession.SelectedDefenders.Count == 5)
-        {
-            Player1FreelancerDeck = new List<FreelancerData>(gameSession.SelectedAttackers);
-            Player2FreelancerDeck = new List<FreelancerData>(gameSession.SelectedDefenders);
-        }
-        else
-        {
-            Player1FreelancerDeck = new List<FreelancerData>();
-            Player2FreelancerDeck = new List<FreelancerData>();
-            DraftFreelancers();
-        }
-        SetupInputManager();
-        if (player1CardDeckProfile == null || player2CardDeckProfile == null)
-        {
-            return;
-        }
+        Player1FreelancerDeck = new List<FreelancerData>(gameSession.SelectedAttackers);
+        Player2FreelancerDeck = new List<FreelancerData>(gameSession.SelectedDefenders);
+        isPlayer1Attacker = gameSession.IsPlayer1Attacker;
+    }
+    else
+    {
+        Player1FreelancerDeck = new List<FreelancerData>();
+        Player2FreelancerDeck = new List<FreelancerData>();
+        DraftFreelancers();
     }
 
-    void Start()
+    SetupInputManager();
+    if (player1CardDeckProfile == null || player2CardDeckProfile == null)
     {
-        if (player1CardDeckProfile == null || player2CardDeckProfile == null)
-        {
-            return;
-        }
-        PieceManager.OnAnyPieceKilled += HandlePieceKilled;
-        ServiceLocator.Decks.BuildDecks(player1CardDeckProfile, player2CardDeckProfile);
-        if (introAnimationManager == null)
-            introAnimationManager = FindFirstObjectByType<IntroAnimationManager>();
-        StartCoroutine(InitializeGameWithIntro());
+        return;
     }
+}
+
+
+
+
+    private void Start()
+{
+    var net = Unity.Netcode.NetworkManager.Singleton;
+    bool isNet = net != null && net.IsListening;
+
+    if (!isNet)
+    {
+        if (!_started)
+        {
+            _started = true;
+            StartCoroutine(InitializeGameWithIntro());
+        }
+        return;
+    }
+
+    PlayerNetworkData.OnRosterApplied -= HandleRosterApplied;
+    PlayerNetworkData.OnRosterApplied += HandleRosterApplied;
+
+    var gsm = GameSessionManager.Instance;
+    bool hasRoster = gsm != null
+        && gsm.SelectedAttackers != null && gsm.SelectedAttackers.Count > 0
+        && gsm.SelectedDefenders != null && gsm.SelectedDefenders.Count > 0;
+
+    if (hasRoster)
+    {
+        HandleRosterApplied();
+    }
+    else if (devFallbackOnTimeout)
+    {
+        StartCoroutine(DevFallbackTimer());
+    }
+}
+
 
     void Update()
     {
@@ -98,12 +128,16 @@ public class GameManager : MonoBehaviour
             InputManager.OnEmptySpaceClicked -= OnEmptySpaceClicked;
         }
         PieceManager.OnAnyPieceKilled -= HandlePieceKilled;
+        PlayerNetworkData.OnRosterApplied -= HandleRosterApplied;
     }
     #endregion
 
     #region Initialization
     private IEnumerator InitializeGameWithIntro()
     {
+if (Unity.Netcode.NetworkManager.Singleton != null)
+    yield return StartCoroutine(Network_ResolveRoster());
+
         StartCoroutine(FadeInFromBlack());
         ClearEditorObjects();
         if (ServiceLocator.Grid == null || ServiceLocator.UI == null || ServiceLocator.Freelancers == null)
@@ -224,14 +258,19 @@ public class GameManager : MonoBehaviour
         return mapContainer;
     }
 
-    private void SpawnPiecesFromMapData(MapEditorData mapData, Transform piecesParent)
+    void SpawnPiecesFromMapData(MapEditorData mapData, Transform piecesParent)
+{
+    if (ServiceLocator.Pieces == null) return;
+    List<Vector2Int> player1Spawns = mapData.GetPlayer1SpawnPoints();
+    List<Vector2Int> player2Spawns = mapData.GetPlayer2SpawnPoints();
+    ServiceLocator.Pieces.SpawnPiecesFromSpawnPoints(Player1FreelancerDeck, Player2FreelancerDeck, player1Spawns, player2Spawns, piecesParent);
+    StartCoroutine(CorrectPiecePositionsAfterSpawn());
+    if (Unity.Netcode.NetworkManager.Singleton != null && Unity.Netcode.NetworkManager.Singleton.IsServer)
     {
-        if (ServiceLocator.Pieces == null) return;
-        List<Vector2Int> player1Spawns = mapData.GetPlayer1SpawnPoints();
-        List<Vector2Int> player2Spawns = mapData.GetPlayer2SpawnPoints();
-        ServiceLocator.Pieces.SpawnPiecesFromSpawnPoints(Player1FreelancerDeck, Player2FreelancerDeck, player1Spawns, player2Spawns, piecesParent);
-        StartCoroutine(CorrectPiecePositionsAfterSpawn());
+        if (ServiceLocator.Combat != null) ServiceLocator.Combat.Server_PopulateSyncedFreelancers();
     }
+}
+
 
     private IEnumerator CorrectPiecePositionsAfterSpawn()
     {
@@ -934,6 +973,127 @@ public class GameManager : MonoBehaviour
         if (ServiceLocator.Cards != null && Player1FreelancerDeck != null && Player2FreelancerDeck != null)
             ServiceLocator.Cards.InitializeFreelancerCards(Player1FreelancerDeck, Player2FreelancerDeck);
     }
+    public void Network_ApplyRosterAndContinue(List<FreelancerData> p1, List<FreelancerData> p2, bool isP1)
+    {
+        Player1FreelancerDeck = p1;
+        Player2FreelancerDeck = p2;
+        isPlayer1Attacker = isP1;
+        SetupInputManager();
+        if (player1CardDeckProfile == null || player2CardDeckProfile == null)
+        {
+            return;
+        }
+    }
+    IEnumerator Network_WaitForRosterThenBuildDecks()
+    {
+        var nm = Unity.Netcode.NetworkManager.Singleton;
+        if (nm == null) yield break;
+        if (!nm.IsClient) yield break;
+
+        var session = GameSessionManager.Instance;
+        while (session == null) { yield return null; session = GameSessionManager.Instance; }
+
+        float t = 0f;
+        while (!session.SelectionsReady && t < 5f)
+        {
+            t += UnityEngine.Time.deltaTime;
+            yield return null;
+        }
+
+        if (session.SelectedAttackers.Count != 5 && session.SelectedAttackersIdx.Count == 5 && freelancerDatabase != null)
+        {
+            session.SelectedAttackers.Clear();
+            session.SelectedDefenders.Clear();
+            for (int i = 0; i < session.SelectedAttackersIdx.Count; i++)
+            {
+                int idx = session.SelectedAttackersIdx[i];
+                if (idx >= 0 && idx < freelancerDatabase.allFreelancers.Count)
+                    session.SelectedAttackers.Add(freelancerDatabase.allFreelancers[idx]);
+            }
+            for (int i = 0; i < session.SelectedDefendersIdx.Count; i++)
+            {
+                int idx = session.SelectedDefendersIdx[i];
+                if (idx >= 0 && idx < freelancerDatabase.allFreelancers.Count)
+                    session.SelectedDefenders.Add(freelancerDatabase.allFreelancers[idx]);
+            }
+        }
+
+        if (session.SelectedAttackers.Count == 5 && session.SelectedDefenders.Count == 5)
+        {
+            Player1FreelancerDeck = new List<FreelancerData>(session.SelectedAttackers);
+            Player2FreelancerDeck = new List<FreelancerData>(session.SelectedDefenders);
+            isPlayer1Attacker = session.IsPlayer1Attacker;
+        }
+    }
+    System.Collections.IEnumerator Network_ResolveRoster()
+    {
+        var nm = Unity.Netcode.NetworkManager.Singleton;
+        if (nm == null) yield break;
+
+        var session = GameSessionManager.Instance;
+        while (session == null) { yield return null; session = GameSessionManager.Instance; }
+
+        float t = 0f;
+        while (!session.SelectionsReady && t < 0.5f)
+        {
+            t += Time.deltaTime;
+            yield return null;
+        }
+
+        if (!session.SelectionsReady)
+        {
+            var pnd = PlayerNetworkData.Instance != null ? PlayerNetworkData.Instance : UnityEngine.Object.FindFirstObjectByType<PlayerNetworkData>();
+            if (pnd != null && nm.IsClient) pnd.RequestRosterServerRpc();
+            t = 0f;
+            while (!session.SelectionsReady && t < 5f)
+            {
+                t += Time.deltaTime;
+                yield return null;
+            }
+        }
+
+        if (session.SelectedAttackers.Count != 5 && session.SelectedAttackersIdx.Count == 5 && freelancerDatabase != null)
+        {
+            session.SelectedAttackers.Clear();
+            session.SelectedDefenders.Clear();
+            for (int i = 0; i < session.SelectedAttackersIdx.Count; i++)
+            {
+                int idx = session.SelectedAttackersIdx[i];
+                if (idx >= 0 && idx < freelancerDatabase.allFreelancers.Count)
+                    session.SelectedAttackers.Add(freelancerDatabase.allFreelancers[idx]);
+            }
+            for (int i = 0; i < session.SelectedDefendersIdx.Count; i++)
+            {
+                int idx = session.SelectedDefendersIdx[i];
+                if (idx >= 0 && idx < freelancerDatabase.allFreelancers.Count)
+                    session.SelectedDefenders.Add(freelancerDatabase.allFreelancers[idx]);
+            }
+        }
+
+        if (session.SelectedAttackers.Count == 5 && session.SelectedDefenders.Count == 5)
+        {
+            Player1FreelancerDeck = new List<FreelancerData>(session.SelectedAttackers);
+            Player2FreelancerDeck = new List<FreelancerData>(session.SelectedDefenders);
+            isPlayer1Attacker = session.IsPlayer1Attacker;
+        }
+    }
+private void HandleRosterApplied()
+{
+    if (_started) return;
+    _started = true;
+    StartCoroutine(InitializeGameWithIntro());
+}
+
+private System.Collections.IEnumerator DevFallbackTimer()
+{
+    yield return new UnityEngine.WaitForSecondsRealtime(devFallbackTimeout);
+    if (_started) yield break;
+    _started = true;
+    StartCoroutine(InitializeGameWithIntro());
+}
+
+
+
     #endregion
 
     #region Event Callbacks

@@ -25,7 +25,7 @@ public class SetupState : IGameState
         bool isPlayer1Attacker = gameManager.isPlayer1Attacker;
         if (ServiceLocator.Cards != null)
         {
-            // Mostra a mão de operadores do atacante e esconde a do defensor
+            // Mostra a mão de freelancers do atacante e esconde a do defensor
             ServiceLocator.Cards.SetFreelancerHandVisibility(isPlayer1Attacker, !isPlayer1Attacker);
             
             // Garante que elas estejam no modo de visualização de preparação

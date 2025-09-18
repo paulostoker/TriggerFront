@@ -289,7 +289,7 @@ public class FreelancerManager : MonoBehaviour
         int utility = GetEnergyCount(piece, CardType.Utility);
         int aura = GetEnergyCount(piece, CardType.Aura);
         ServiceLocator.Cards.UpdateFreelancerCardEnergy(instance.BaseData, instance.IsPlayer1, action, utility, aura);
-        
+
         UpdateEcoStatus(instance);
     }
 
@@ -428,7 +428,7 @@ public class FreelancerManager : MonoBehaviour
             Debug.LogError($"<color=red>[FreelancerManager ERROR]</color> Tentativa de marcar movimento em peça sem FreelancerInstance: {piece.name}");
         }
     }
-        public void SetActionCharges(GameObject piece, int value)
+    public void SetActionCharges(GameObject piece, int value)
     {
         FreelancerInstance instance = GetFreelancerInstance(piece);
         if (instance != null)
@@ -445,7 +445,7 @@ public class FreelancerManager : MonoBehaviour
             instance.ActionCharges--;
             Debug.Log($"<color=red>[Action Charges]</color> {instance.BaseData.name} consumiu uma carga de ação. Restantes: {instance.ActionCharges}");
         }
-        
+
         if (instance.ActionCharges <= 0)
         {
             instance.HasActedThisTurn = true;
@@ -481,13 +481,13 @@ public class FreelancerManager : MonoBehaviour
             Debug.LogError($"<color=red>[FreelancerManager]</color> CanFreelancerMove: FreelancerInstance não encontrada para {piece.name}");
             return false;
         }
-        
-        if (!instance.IsAlive) 
+
+        if (!instance.IsAlive)
         {
             Debug.Log($"<color=gray>[FreelancerManager]</color> {instance.BaseData.name} não pode se mover - morto");
             return false;
         }
-        
+
         bool canMove = !instance.HasMovedThisTurn;
         Debug.Log($"<color=cyan>[CAN MOVE CHECK]</color> {instance.BaseData.name}: HasMovedThisTurn={instance.HasMovedThisTurn} → CanMove={canMove}");
         return canMove;
@@ -496,11 +496,11 @@ public class FreelancerManager : MonoBehaviour
     {
         FreelancerInstance instance = GetFreelancerInstance(piece);
         if (instance == null) return false;
-        
+
         if (!instance.IsAlive) return false;
         if (ServiceLocator.Effects.IsActionForbidden(piece, ModifierType.ForbidAttack))
             return false;
-        
+
         return instance.ActionCharges > 0;
     }
 
@@ -509,9 +509,9 @@ public class FreelancerManager : MonoBehaviour
         FreelancerInstance instance = GetFreelancerInstance(piece);
         if (instance == null) return false;
         if (!instance.IsAlive) return false;
-        
+
         if (GameConfig.Instance.allowMultipleSkillsPerTurn) return true;
-        
+
         bool canUseSkill = !instance.HasUsedSkillThisTurn;
         Debug.Log($"<color=magenta>[CAN SKILL CHECK]</color> {instance.BaseData.name}: HasUsedSkillThisTurn={instance.HasUsedSkillThisTurn} → CanUseSkill={canUseSkill}");
         return canUseSkill;
@@ -521,7 +521,7 @@ public class FreelancerManager : MonoBehaviour
     {
         FreelancerInstance instance = GetFreelancerInstance(piece);
         if (instance == null) return true;
-        
+
         bool completed = instance.HasMovedThisTurn && instance.HasActedThisTurn;
         Debug.Log($"<color=purple>[TURN COMPLETE CHECK]</color> {instance.BaseData.name}: Moved={instance.HasMovedThisTurn}, Acted={instance.HasActedThisTurn} → Complete={completed}");
         return completed;
@@ -530,9 +530,9 @@ public class FreelancerManager : MonoBehaviour
     {
         var teamFreelancers = isPlayer1Team ? player1Freelancers : player2Freelancers;
         string teamName = isPlayer1Team ? "Player 1" : "Player 2";
-        
+
         Debug.Log($"<color=magenta>[VALIDATION]</color> === VALIDAÇÃO DE ESTADOS - {teamName} ===");
-        
+
         for (int i = 0; i < teamFreelancers.Count; i++)
         {
             var instance = teamFreelancers[i];
@@ -541,9 +541,9 @@ public class FreelancerManager : MonoBehaviour
                 bool canMove = CanFreelancerMove(instance.PieceGameObject);
                 bool canAct = CanFreelancerAct(instance.PieceGameObject);
                 bool canSkill = CanFreelancerUseSkill(instance.PieceGameObject);
-                
-                string status = $"#{i+1} {instance.BaseData.name}: M:{canMove}/A:{canAct}/S:{canSkill}";
-                
+
+                string status = $"#{i + 1} {instance.BaseData.name}: M:{canMove}/A:{canAct}/S:{canSkill}";
+
                 if (canMove && canAct && canSkill)
                 {
                     Debug.Log($"<color=green>[VALIDATION OK]</color> {status}");
@@ -554,8 +554,31 @@ public class FreelancerManager : MonoBehaviour
                 }
             }
         }
-        
+
         Debug.Log($"<color=magenta>[VALIDATION]</color> === FIM DA VALIDAÇÃO ===");
     }
+    public FreelancerInstance GetFreelancerByIndex(bool isPlayer1, int index)
+{
+    if (isPlayer1)
+    {
+        if (index < 0) return null;
+        var list = GetAllFreelancerInstances().Where(f => f.IsPlayer1).ToList();
+        if (index >= list.Count) return null;
+        return list[index];
+    }
+    else
+    {
+        if (index < 0) return null;
+        var list = GetAllFreelancerInstances().Where(f => !f.IsPlayer1).ToList();
+        if (index >= list.Count) return null;
+        return list[index];
+    }
+}
+
+public GameObject GetPieceByIndex(bool isPlayer1, int index)
+{
+    var inst = GetFreelancerByIndex(isPlayer1, index);
+    return inst != null ? inst.PieceGameObject : null;
+}
     #endregion
 }

@@ -47,7 +47,7 @@ public class Card3D : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
     private RectTransform rectTransform;
     private Hand3DContainer handContainer;
 
-    // Referência para o container de operadores ao qual esta carta pertence
+
     private FreelancersUIContainer freelancerContainer;
 
     void Awake()

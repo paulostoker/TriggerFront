@@ -8,7 +8,7 @@ public class Card3DLayout : MonoBehaviour
 {
     [Header("Layout GameObjects")]
     public GameObject energyLayout;      // Para Action, Utility, Aura
-    public GameObject freelancerLayout;    // Para Operadores
+    public GameObject freelancerLayout;    // Para freelancers
     public GameObject supportLayout;     // Para Skill, Strategy
     public GameObject backLayout;        // Verso da carta
 
